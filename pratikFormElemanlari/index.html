@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Örneği</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Kullanıcı Bilgileri Formu</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="ad">Adınız:</label>
+                <input type="text" id="ad" name="ad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="soyad">Soyadınız:</label>
+                <input type="text" id="soyad" name="soyad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="parola">Parolanız:</label>
+                <input type="password" id="parola" name="parola" required>
+            </div>
+
+            <div class="form-group">
+                <label>Cinsiyetiniz:</label>
+                <div class="radio-group">
+                    <input type="radio" id="erkek" name="cinsiyet" value="Erkek" required>
+                    <label for="erkek">Erkek</label>
+                    <input type="radio" id="kadin" name="cinsiyet" value="Kadın" required>
+                    <label for="kadin">Kadın</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="meyve">Favori Meyveniz:</label>
+                <select id="meyve" name="meyve" required>
+                    <option value="">Lütfen bir meyve seçiniz</option>
+                    <option value="Elma">Elma</option>
+                    <option value="Muz">Muz</option>
+                    <option value="Çilek">Çilek</option>
+                    <option value="Armut">Armut</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mesaj">Mesajınız:</label>
+                <textarea id="mesaj" name="mesaj" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Gönder">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
